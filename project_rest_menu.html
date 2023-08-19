@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSD Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="download (3).webp">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid red;
+            /* overflow: auto; */
+            width: 1500px;
+            height: 91px;
+            border-radius:50px;
+            background-color: lightskyblue;
+            position: sticky;
+            top: 0;
+
+
+
+        }
+
+        .homelist li {
+            display: inline-block;
+            max-width: 15rem;
+            padding: 5px 15px;
+            margin: auto;
+            /* padding: 0px;
+            margin: -87px; */
+        }
+
+        .homelist li a {
+            text-decoration: none;
+            color: black;
+            border: 2px solid green;
+            padding: 10px;
+            /* margin: -87px;   */
+        }
+
+        .homelist li a:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* .login{
+            padding: px;
+        } */
+        .homecontent {
+            position: relative;
+            left: 400px;
+        }
+
+        .icon {
+            bottom: -7px;
+            position: relative;
+            margin: 0px 20px;
+            /* bottom-top: 200px; */
+        }
+
+        .homelist {
+            padding: 0px;
+            margin: -50px;
+        }
+
+       
+        .section1 {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+            margin:90px 50px;
+            color: white;
+        }
+        .section2 {
+            float: right;
+            width: 50%;
+            padding: 15px;
+            margin:20px auto;
+            color: #dfd156;
+        }
+        @media screen  and (max-width:600px) {
+            .section1,.section2{
+                width:100%;
+            }
+            
+        }
+        body{
+            background-image: url("knife.jpg");
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            background-position:fixed;
+            background-size: 1600px 800px; 
+        }
+        .button{
+            background-color: green;
+            color:white;
+            font-weight: bold;
+            border:2px solid black;
+            border-radius: 10px;
+        }
+        .button:hover{
+            background-color: white;
+            color: red;
+        }
+        .bodyimg{
+            height:800px;
+            width: auto;
+
+        }
+        .explain{
+            margin-right: 90px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <img src="download (3).webp" width="121px" class="icon"> <!-- https://fontawesome.com/v4/icons/-->
+        <header>
+            <nav>
+                <div class="homecontent" id="home">
+                    <ul class="homelist">
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-bars"></i>Menu</a></li>
+                        <li><a href="#"><i class="fa fa-first-order"></i>Order Online</a></li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+                        <!-- <li><a href="#"><img src="img2.jpg" width="43px"></a></li> -->
+                        <li><a href="loginpage.html" class="login"><i class="fa fa-user-circle-o"></i> Log In</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        </div>
+        <div class="section">
+            <section>
+                <div class="section1">
+                    <img src="burger.jpg" alt="burger pic" class="burger" width="400px" height="200px">
+                    <h3>Special Burger</h3>
+                    <p>A burger is a patty of ground beef grilled and placed between two halves of a bun. Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor. Burgers are considered an American food but are popular around the world.</p>
+                    <p><b>Special Price : &#x20B9;300</b></p>
+                    <button type="button" class="button">Order Now</button>
+                </div>
+                <div class="section2">
+                    <img src="Biriyani_img.jpg" alt="biriyani" class="biriyani">
+                    <h3>Biriyani</h3>
+                    <p class="explain">It is a famous Indian subcontinent dish that is popular around the world. Biryani is prepared from basmati rice mixed with several spices and cooked in a special way. Chicken Biryani, Mutton Biryani and Veg Biryani are some of the variants of this delicious dish.</p>
+                    <p ><b>Special Price : &#x20B9;300</b></p>
+                    <button type="button" class="button">Order Now</button>
+                </div>
+            </section>
+        </div>
+       
+        
+       
+</body>
+
+</html>
